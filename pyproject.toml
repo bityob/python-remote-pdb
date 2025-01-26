@@ -32,12 +32,15 @@ classifiers = [
     "Topic :: Utilities",
 ]
 
-[project.dynamic]
-long-description = {file = ["README.rst", "CHANGELOG.rst"]}
-
-[tool.setuptools.dynamic]
-long-description = {file = ["README.rst", "CHANGELOG.rst"]}
-long-description.content-type = "text/x-rst"
+# TODO:
+#   - Add long description.
+#   - merge setup.cfg
+#   - mergef pytest.ini
+#   - merge tox.ini
+#   - merge bumpversion.cfg
+#   - merge .coveragerc
+#[project.dynamic]
+#long-description = {file = ["README.rst", "CHANGELOG.rst"]}
 
 
 [build-system]
