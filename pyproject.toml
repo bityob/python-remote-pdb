@@ -1,6 +1,6 @@
 [project]
 name = "remote-pdb"
-version = "2.1.0"
+version = "2.2.0"
 description = "Remote vanilla PDB (over TCP sockets) *done right*: no extras, proper handling around connection failures and CI. Based on `pdbx <https://pypi.python.org/pypi/pdbx>`_."
 authors = [
     {name = "Ionel Cristian Mărieș", email = "contact@ionelmc.ro"},
