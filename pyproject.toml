@@ -4,13 +4,13 @@ version = "2.1.0"
 description = "Remote vanilla PDB (over TCP sockets) *done right*: no extras, proper handling around connection failures and CI. Based on `pdbx <https://pypi.python.org/pypi/pdbx>`_."
 authors = [
     {name = "Ionel Cristian Mărieș", email = "contact@ionelmc.ro"},
-    {name = "Yonatan Bitton", email = "bityob@gmai.com"},
+    {name = "Yonatan Bitton", email = "bityob@gmail.com"},
 ]
 dependencies = [
 ]
 requires-python = ">=3.7"
-readme = "README.md"
-license = {text = "BSD-2-Clause"}
+readme = "README.rst"
+license = {text = "BSD-2-Clause", content-type = "text/x-rst"}
 keywords = []
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -32,6 +32,14 @@ classifiers = [
     "Topic :: Utilities",
 ]
 
+[project.dynamic]
+long-description = {file = ["README.rst", "CHANGELOG.rst"]}
+
+[tool.setuptools.dynamic]
+long-description = {file = ["README.rst", "CHANGELOG.rst"]}
+long-description.content-type = "text/x-rst"
+
+
 [build-system]
 requires = [
     "setuptools>=30.3.0",
@@ -42,10 +50,6 @@ requires = [
 line-length = 140
 target-version = ['py37', 'py311']
 skip-string-normalization = true
-
-[tool.pdm]
-distribution = true
-package-dir = "src"
 
 
 [project.urls]
