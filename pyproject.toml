@@ -1,3 +1,48 @@
+[project]
+name = "remote-pdb"
+version = "2.2.0"
+description = "Remote vanilla PDB (over TCP sockets) *done right*: no extras, proper handling around connection failures and CI. Based on `pdbx <https://pypi.python.org/pypi/pdbx>`_."
+authors = [
+    {name = "Ionel Cristian Mărieș", email = "contact@ionelmc.ro"},
+    {name = "Yonatan Bitton", email = "bityob@gmail.com"},
+]
+dependencies = [
+]
+requires-python = ">=3.7"
+readme = "README.rst"
+license = {text = "BSD-2-Clause", content-type = "text/x-rst"}
+keywords = []
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Utilities",
+]
+
+# TODO:
+#   - Add long description.
+#   - merge setup.cfg
+#   - mergef pytest.ini
+#   - merge tox.ini
+#   - merge bumpversion.cfg
+#   - merge .coveragerc
+#[project.dynamic]
+#long-description = {file = ["README.rst", "CHANGELOG.rst"]}
+
+
 [build-system]
 requires = [
     "setuptools>=30.3.0",
@@ -6,5 +51,12 @@ requires = [
 
 [tool.black]
 line-length = 140
-target-version = ['py37']
+target-version = ['py37', 'py311']
 skip-string-normalization = true
+
+
+[project.urls]
+Homepage = "https://github.com/ionelmc/python-remote-pdb"
+Documentation = "https://python-remote-pdb.readthedocs.io/"
+Changelog = "https://python-remote-pdb.readthedocs.io/en/latest/changelog.html"
+"Issue Tracker" = "https://github.com/ionelmc/python-remote-pdb/issues"
